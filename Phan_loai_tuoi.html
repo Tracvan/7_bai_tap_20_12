@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân loại tuổi</title>
+</head>
+<body>
+<h1>Chọn nhóm tuổi của bạn </h1>
+<button value="6" type="button" id="nhom_1" onclick="myFunction1()">Từ 0-6 tuổi</button>
+<button value="16" type="button" id="nhom_2" onclick="myFunction2()">Từ 7-16 tuổi</button>
+<button value="18" type="button" id="nhom_3" onclick="myFunction3()">Từ 17-18 tuổi</button>
+<button value="59" type="button" id="nhom_4" onclick="myFunction4()">Từ 18-59 tuổi</button>
+<button value="60" type="button" id="nhom_5" onclick="myFunction5()">Từ 60 trở lên tuổi</button>
+<br>
+<p id="result">Hiển thị kết quả tại đây</p>
+</body>
+</html>
+<script>
+    let a = "em bé"
+    function myFunction1(){
+        document.getElementById("result").innerHTML="Em bé"
+    }function myFunction2(){
+        document.getElementById("result").innerHTML="Trẻ em"
+    }function myFunction3(){
+        document.getElementById("result").innerHTML="Thiếu niên"
+    }function myFunction4(){
+        document.getElementById("result").innerHTML="Thanh niên"
+    }function myFunction5(){
+        document.getElementById("result").innerHTML="Người cao tuổi"
+    }
+</script>

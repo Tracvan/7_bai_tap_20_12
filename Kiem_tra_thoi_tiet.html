@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Thời Tiết</title>
+</head>
+<body>
+<h1>Hãy nhập nhiệt độ ngày hôm nay</h1>
+<input type="text" id="degree"> <button onclick="check()" type="button" id="check">Kiểm tra</button>
+<p id="result">Kết quả hiển thị tại đây</p>
+</body>
+</html>
+<script>
+    function check(){
+        let a = parseFloat(document.getElementById("degree").value)
+        if(a<20){
+            document.getElementById("result").innerHTML="Thời tiết lạnh đấy ! Ở nhà đi !! Nếu ra đường thì mặc thêm áo vào"
+        }else if(a<26){
+            document.getElementById("result").innerHTML="Thời tiết đẹp đấy ! Ra đường chơi đi"
+        }else if (a<30){
+            document.getElementById("result").innerHTML="Thời tiết ấm áp đấy, mặc đồ thoải mái thôi"
+        }else if(a<35){
+            document.getElementById("result").innerHTML="Thời tiết nóng đấy, mặc đồ mỏng thôi"
+        }else{
+            document.getElementById("result").innerHTML="Thôi khỏi mặc đồ ra đường bạn ei "
+        }
+    }
+</script>

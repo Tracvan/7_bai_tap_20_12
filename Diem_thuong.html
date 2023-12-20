@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Điểm Thưởng</title>
+</head>
+<body>
+<h1>Hãy nhập số chi tiêu của bạn:</h1>
+<input type="text" id="amount"> <button type="button" onclick="point()">Kiểm tra</button>
+<p id="result">Điểm thưởng hiển thị tại đây:</p>
+</body>
+</html>
+<script>
+    function point() {
+        let a = parseInt(document.getElementById("amount").value)
+        if (a <= 1000000) {
+            document.getElementById("result").innerHTML = "Không có điểm bạn ơi !!! Tiêu thêm tiền đi"
+        } else if (a <= 2000000) {
+            document.getElementById("result").innerHTML = "Bạn được 1 điểm, kiếm thêm điểm bằng cách tiêu thêm tiền đi"
+        } else if (a <= 4000000)
+            document.getElementById("result").innerHTML = "Bạn được 2 điểm rồi ! Cố lên !!!"
+    }
+
+
+
+</script>

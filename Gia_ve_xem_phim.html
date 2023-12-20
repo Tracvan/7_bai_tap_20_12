@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giá Vé Xem Phim</title>
+</head>
+<body>
+<h1> Nhập tuổi của bạn bên dưới></h1>
+<input id="age" type="text"> <button onclick="myFunction()" type="button" id="check">Kiểm tra</button>
+<br>
+<span>Giá vé của bạn là: </span> <p id="result"></p>
+</body>
+</html>
+<script>
+    function myFunction(){
+        let a = parseInt(document.getElementById("age").value)
+        if(a <= 16){
+            document.getElementById("result").innerHTML = "50.000VNĐ"
+        } else if(a <= 60) {
+            document.getElementById("result").innerHTML = "80.000VNĐ"
+        } else {
+            document.getElementById("result").innerHTML = "60.000VNĐ"
+        }
+    }
+</script>

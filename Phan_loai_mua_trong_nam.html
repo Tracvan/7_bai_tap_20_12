@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân loại mùa trong năm</title>
+</head>
+<body>
+<h1>Hãy nhập tháng bạn muốn tra</h1>
+<input type="text" id="month" > <button type="button" onclick="tra()">Kiểm tra</button>
+<br>
+<span id="result">Kết quả hiển thị tại đây :</span>
+</body>
+<script>
+    function tra(){
+        let num = parseInt(document.getElementById("month").value);
+        if(num>0 && num<=3){
+        document.getElementById("result").innerHTML="Mùa xuân"
+        }else if(num<=6){
+        document.getElementById("result").innerHTML="Mùa hạ"
+        }else if(num<=9){
+        document.getElementById("result").innerHTML="Mùa thu"
+        }else if(num<=12){
+        document.getElementById("result").innerHTML="Mùa đông"
+        }else{
+            document.getElementById("result").innerText="Nhập lại đàng hoàng, không giỡn"
+
+        }
+    }
+</script>
+</html>
